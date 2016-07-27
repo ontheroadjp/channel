@@ -9,7 +9,7 @@
 <meta charset="<?php bloginfo('charset'); ?>">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-<?php include( 'include/export_metatag.php'); ?>
+<?php include( 'include/metatag.php'); ?>
 
 <!-- --------------------- CSS ------------------------ -->
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/style.css" />
