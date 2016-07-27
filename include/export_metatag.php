@@ -16,7 +16,7 @@
 		echo '<title>'.get_bloginfo('name').'</title>'."\n";
 		echo '<meta name="description" content="'.$desc.'" />'."\n";
 		echo '<meta name="keywords" content="'.$keywords.'" />'."\n";
-		echo '<link rel="canonical" href="'.get_bloginfo('siteurl').'" />'."\n";
+		echo '<link rel="canonical" href="'.get_bloginfo('siteurl').'/amp" />'."\n";
 			
 	// トップページ（2ページ目以降）
 	} else if( is_home() ) {
