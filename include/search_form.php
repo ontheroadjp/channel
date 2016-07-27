@@ -8,7 +8,7 @@
 -->
 
 <!-- Google カスタムサーチ -->
-<form action="http://dev.ontheroad.jp/search" id="cse-search-box">
+<form action="https://dev.ontheroad.jp/search" id="cse-search-box">
 <div>
 <input type="hidden" name="cx" value="partner-pub-9420456297086074:1786924076" />
 <input type="hidden" name="cof" value="FORID:10" />
@@ -19,8 +19,8 @@
 </form>
 
 <!-- （人気のクエリのコード）-->
-<script type="text/javascript" src="http://www.google.com/cse/query_renderer.js"></script>
+<script type="text/javascript" src="//www.google.com/cse/query_renderer.js"></script>
 <div id="queries"></div>
-<script src="http://www.google.com/cse/api/partner-pub-9420456297086074/cse/1786924076/queries/js?oe=UTF-8&amp;callback=(new+PopularQueryRenderer(document.getElementById(%22queries%22))).render"></script>
+<script src="//www.google.com/cse/api/partner-pub-9420456297086074/cse/1786924076/queries/js?oe=UTF-8&amp;callback=(new+PopularQueryRenderer(document.getElementById(%22queries%22))).render"></script>
 <!-- Google カスタムサーチ -->
 
