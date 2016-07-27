@@ -122,9 +122,7 @@ if( is_category() || is_tag() ) {
 	<!-- ---------------------------- 広告（中段） ----------------------------------------------- -->
 	<?php if( $loop_count == 3 ) { ?>
 		<div class="left adsense">
-
-		<iframe src="http://rcm-jp.amazon.co.jp/e/cm?t=ontheroad0a-22&o=9&p=12&l=ur1&category=kindlebooks&banner=12NJVSNGQT7WYTTCM182&f=ifr" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
-
+		   <!-- <iframe src="//rcm-jp.amazon.co.jp/e/cm?t=ontheroad0a-22&o=9&p=12&l=ur1&category=kindlebooks&banner=12NJVSNGQT7WYTTCM182&f=ifr" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe> -->
 		</div>
 
 		<div class="left adsense">
@@ -142,6 +140,8 @@ if( is_category() || is_tag() ) {
 		</div>
 		<div class="clear"></div><br />
 	<?php } ?>
+	<!-- ---------------------------- 広告（中段） ----------------------------------------------- -->
+
 
 	<div id="post">
 	<div id="postbox">
@@ -171,7 +171,7 @@ if( is_category() || is_tag() ) {
 
 <!-- ---------------------------- 広告（下段） ----------------------------------------------- -->
 <div class="left adsense">
-		<iframe src="http://rcm-jp.amazon.co.jp/e/cm?t=ontheroad0a-22&o=9&p=12&l=ur1&category=kindle&banner=1JY4KG6QQSJKBPMGQWR2&f=ifr" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+   <!--  <iframe src="//rcm-jp.amazon.co.jp/e/cm?t=ontheroad0a-22&o=9&p=12&l=ur1&category=kindle&banner=1JY4KG6QQSJKBPMGQWR2&f=ifr" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe> -->
 </div>
 
 <div class="left adsense">

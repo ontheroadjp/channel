@@ -1,6 +1,6 @@
 /* 
 	Theme Name: Channel
-	Theme URL: http://dev.ontheroad.jp/
+	Theme URL: https://dev.ontheroad.jp/
 	Description: + A Place in the Sun +
 	Author: ???
 	Version: 1.2
@@ -22,7 +22,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 *	OVERALL		   *
 ********************/
 body {
-	background: #e6e6e6;
+/*	background: #e6e6e6; */
 /*	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS P Gothic", Verdana, sans-serif; */
 	font-family: Meiryo, 'メイリオ', ArialMT, Hiragino Kaku Gothic Pro, 'ヒラギノ角ゴ Pro W3', Osaka, Verdana, 'ＭＳ Ｐゴシック';
 	font-size: 12px;
@@ -31,11 +31,11 @@ body {
 }
 
 #wrapper {
-	background: #fff;
+	/* background: #fff; */
 	width: 960px;
 	margin: 15px auto;
 	padding: 10px 15px 15px 15px;
-	border: 1px solid #ddd;
+	/* border: 1px solid #ddd; */
 }
 
 /*******************
@@ -198,7 +198,7 @@ h2.separator {
 
 .showcase {
 	width: 100%;
-	margin: -6px -4px 0 0px;
+	margin: -6px -4px 20px 0px;
 /*	background: #f9f9f9; */
 //	border: 1px solid #e6e6e6;
 	padding : 0px 0 5px 0;
@@ -207,9 +207,8 @@ h2.separator {
 	float: left;
 	width: 150px;
 	height: 160px;
-	background: #F2F2F2;
-	border: 1px solid #C6CFDC;
-
+	/* background: #F2F2F2; */
+	border: 1px solid #f2f1f1;
 	padding: 2px 0 0 0;
 	margin: 4px;
 	font-size: ;
@@ -241,8 +240,7 @@ h2.separator {
 .post-showcase-thumbnail img {
 	width: 80px;
 	height: 80px;
-	border: 1px dotted #C6CFDC;
-
+	/* border: 1px dotted #C6CFDC; */
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
@@ -492,7 +490,7 @@ form {
 #menu {
 	background: #fff;
 	height: 28px;
-	margin: 0 0 10px 0;
+	margin: 0 0 20px 0;
 	padding: 0;
 	border-top: 1px solid #f0f0f0;
 	border-bottom: 3px solid #BE6262;
@@ -950,7 +948,7 @@ form {
 	float: left;
 	width: 625px;
 	margin: 0;
-	padding: 20px 0 0 0;
+	padding: 0;
 	color: #555;
 }
 
@@ -959,11 +957,12 @@ form {
 }
 
 #content h1 {
-	font-size: 24px;
+	font-size: 26px;
 	font-weight: bold;
 	line-height: 2.0em;
 	margin: 0 0 25px 0;
 	padding: 0 0 0 5px;
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS P Gothic", Verdana, sans-serif;
 }
 
 
@@ -1337,7 +1336,7 @@ a.fb-like:hover {
 .entry_tags li {
 	font-size: 14px;
 	line-height: 2.5em;
-	background: url(http://dev.ontheroad.jp/wp-content/themes/channel/images/icon/circle_icon.jpg) left no-repeat;
+	background: url(//dev.ontheroad.jp/wp-content/themes/channel/images/icon/circle_icon.jpg) left no-repeat;
 	padding: 0 0 0 15px;
 }
 
@@ -2261,7 +2260,7 @@ ul.aktt_tweet_digest .ex_tt_tweets {
 
 /* リスト */
 ol.topic-path {
-	margin: 0 0 10px 0;
+	margin: 0 0 20px 0;
 	padding: 7px 5px;
 	/* background-color: #f9f9f9; *//* 背景色 */
 	list-style-type: none; /* リストマーク非表示 */

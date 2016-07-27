@@ -142,13 +142,13 @@
 <ul>
 
 <li><a href="http://dev.ontheroad.jp/about">
-<img src="http://dev.ontheroad.jp/wp-content/themes/channel/images/company.jpg" style="vertical-align:middle"/></a>
+<img src="//dev.ontheroad.jp/wp-content/themes/channel/images/company.jpg" style="vertical-align:middle"/></a>
 （ひ）（@<a href="https://twitter.com/ontheroad_jp" target="_blank">ontheroad_jp</a>）と申します。<br><br>
 <div style="margin:5px 0;">15年ぶりの Mac （MacBook Air - Mid 2011）を購入したけど、完全に浦島太郎状態な30代後半のサラリーマン。いつ潰れるの？だった Apple  がここまで変貌するとは・・。いやはやなんとも感慨深いですね。（<a href="http://dev.ontheroad.jp/about" >もっとくわしく</a>）<br>
 <br>
 ぼちぼち更新してますので宜しくお願いします。<br>
 <br>
-<a href="https://twitter.com/ontheroad_jp" class="twitter-follow-button" data-show-count="false" data-lang="ja">@ontheroad_jpさんをフォロー</a>
+<a href="https://twitter.com/ontheroad_jp" class="twitter-follow-button" data-show-count="false" data-lang="ja">@ontheroad_jpをフォロー</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 <div class="clear"></div></li>

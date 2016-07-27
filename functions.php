@@ -2,6 +2,18 @@
 include("settings.php");
 
 
+
+// http => https  -----------------------------------------------------
+function fix_ssl_attachment_url( $url ) { 
+    if( is_ssl() ){
+        $url = preg_replace('/^http:/', 'https:', $url);
+    }   
+    return $url;
+}
+add_filter('wp_get_attachment_url', 'fix_ssl_attachment_url');
+
+
+
 /**
  * 投稿内のsrc属性をCDN対応にする
  * http://takahashifumiki.com/web/programing/1795/

@@ -7,6 +7,7 @@
 	$lifetime = 60;
 	
 	$url = get_permalink();
+    $url = str_replace( "https://", "http://", $url );
 ?>
 
 <div class="social_buttons">
@@ -62,7 +63,7 @@
 
 	<div class="arrow_box">
 		<!-- <span><?php echo number_format_i18n( get_transient( $db_prefix ) ); ?></span> -->
-		<span>-</span>
+		<span>Tweet!</span>
 	</div>
 	<img class="social_icon" src="<?php bloginfo('template_directory'); ?>/images/social_button/twitter.png" alt="Let's Tweet">
 </a>

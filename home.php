@@ -58,27 +58,31 @@
 
 	<!-- --------------------- 広告（中段） --------------------------- -->
 	<?php if( $loop_count == 3 ) { ?>
-		<! -- 左側 -->
-		<div class="left adsense">
-		
-		<iframe src="http://rcm-jp.amazon.co.jp/e/cm?t=ontheroad0a-22&o=9&p=12&l=ur1&category=kindlebooks&banner=12NJVSNGQT7WYTTCM182&f=ifr" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
 
-		</div>
+        <br>[Ad]<br>
+        <br>
+        <div style="align:center">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- 468×60 バナー -->
+            <ins class="adsbygoogle"
+                 style="display:inline-block;width:468px;height:60px"
+                 data-ad-client="ca-pub-9420456297086074"
+                 data-ad-slot="8771527889"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div><br />
+
+		<! -- 左側 -->
+		<!-- <div class="left adsense"> -->
+		    <!-- <iframe src="//rcm-jp.amazon.co.jp/e/cm?t=ontheroad0a-22&o=9&p=12&l=ur1&category=kindlebooks&banner=12NJVSNGQT7WYTTCM182&f=ifr" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe> -->
+		<!-- </div> -->
 
 		<! -- 右側 -->
-		<div class="left adsense">
-
-			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!-- <div class="left adsense"> -->
 			<!-- （dev）レクタングル（中） 300x250（トップ_中_右） -->
-			<ins class="adsbygoogle"
-			     style="display:inline-block;width:300px;height:250px"
-			     data-ad-client="ca-pub-9420456297086074"
-			     data-ad-slot="8944542304"></ins>
-			<script>
-			(adsbygoogle = window.adsbygoogle || []).push({});
-			</script>
-
-		</div>
+		<!-- </div> -->
+	<!-- --------------------- 広告（中段） --------------------------- -->
 
 
 		<div class="clear"></div><br />
@@ -111,23 +115,28 @@
 <div class="clear"></div>
 
 <!-- ------------------- 広告（下段） ------------------------ -->
+<br>[Ad]<br>
+<br>
+<div style="align:center">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <!-- 468×60 バナー -->
+    <ins class="adsbygoogle"
+         style="display:inline-block;width:468px;height:60px"
+         data-ad-client="ca-pub-9420456297086074"
+         data-ad-slot="8771527889"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+</div><br />
+
 <div class="left adsense">
-		<iframe src="http://rcm-jp.amazon.co.jp/e/cm?t=ontheroad0a-22&o=9&p=12&l=ur1&category=kindle&banner=1JY4KG6QQSJKBPMGQWR2&f=ifr" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+   <!-- <iframe src="//rcm-jp.amazon.co.jp/e/cm?t=ontheroad0a-22&o=9&p=12&l=ur1&category=kindle&banner=1JY4KG6QQSJKBPMGQWR2&f=ifr" width="300" height="250" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe> -->
 </div>
 
 <div class="left adsense">
-
-	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<!-- （dev）レクタングル（中） 300x250（トップ_下_右） -->
-	<ins class="adsbygoogle"
-	     style="display:inline-block;width:300px;height:250px"
-	     data-ad-client="ca-pub-9420456297086074"
-	     data-ad-slot="1421275502"></ins>
-	<script>
-	(adsbygoogle = window.adsbygoogle || []).push({});
-	</script>
-
 </div>
+<!-- ------------------- 広告（下段） ------------------------ -->
 <div class="clear"></div>
 
 <!-- ----------------- Navi -------------------------------- -->
