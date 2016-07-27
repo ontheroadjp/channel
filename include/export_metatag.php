@@ -16,7 +16,7 @@
 		echo '<title>'.get_bloginfo('name').'</title>'."\n";
 		echo '<meta name="description" content="'.$desc.'" />'."\n";
 		echo '<meta name="keywords" content="'.$keywords.'" />'."\n";
-		echo '<link rel="canonical" href="'.get_bloginfo('siteurl').'/amp" />'."\n";
+		echo '<link rel="canonical" href="'.get_bloginfo('siteurl').'" />'."\n";
 			
 	// トップページ（2ページ目以降）
 	} else if( is_home() ) {
@@ -84,7 +84,7 @@
 		echo '<title>'.trim(wp_title('', false)).$title_suffix.'</title>'."\n";
 		echo '<meta name="description" content="'.strip_tags( get_the_excerpt() ).'" />'."\n";
 		echo '<meta name="keywords" content="'.$meta_values.'" />'."\n";
-//		echo '<link rel="canonical" href="'.get_permalink( $post->ID ).'" />'."\n";
+		echo '<link rel="canonical" href="'.get_permalink( $post->ID ).'/amp" />'."\n";
 
 	// その他
 	} else {
