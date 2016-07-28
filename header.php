@@ -50,7 +50,7 @@
 <?php if( is_single() || is_page() ) { ?>
 <meta property="og:title" content="<?php echo strip_tags( the_title() ); ?>" />
 <meta property="og:type" content="article" />
-<meta property="og:image" content="<?php echo get_thumbnail_uri($post->ID, 'large'); ?>" />
+<meta property="og:image" content="<?php echo get_thumbnail_uri($post->ID, 'full'); ?>" />
 <meta property="og:url" content="<?php echo strip_tags( the_permalink() ); ?>" />
 <meta property="og:description" content="<?php echo strip_tags( get_the_excerpt() ); ?>" />
 <?php } else { ?>
@@ -61,7 +61,13 @@
 <meta property="og:description" content="<?php echo get_bloginfo('description'); ?>" />
 <?php } ?>
 
-<!-- Google 構造化データ マークアップ支援ツールが生成した JSON-LD マークアップ -->
+<!-- ---------------------- JSON-LD ------------------------- -->
+<?php if( is_single() ) { ?>
+<?php
+    global $post;
+    $author = get_userdata($post->post_author);
+?>
+
 <script type="application/ld+json">
 {
   "@context" : "http://schema.org",
@@ -69,15 +75,20 @@
   "name" : "<?php echo strip_tags( the_title() ); ?>",
   "author" : {
     "@type" : "Person",
-    "name" : "<?php echo get_the_author_meta('display_name'); ?>"
+    "name" : "<?php echo $author->display_name; ?>"
   },
-  "datePublished" : "<?php the_date('Y-m-d'); ?>",
-  "image" : "<?php get_thumbnail_uri($post->ID); ?>",
-  "articleBody" : "<?php the_content(); ?>"
-  "url" : "<?php echo get_bloginfo('url') . $_SERVER['REQUEST_URI']; ?>"
+  "datePublished" : "<?php echo get_the_date( 'Y-m-d' ); ?>",
+  "image" : "<?php get_thumbnail_uri( $post->ID, 'full' ); ?>",
+  "description" : "<?php echo strip_tags( $post->post_excerpt ); ?>",
+  "articleBody" : "<?php echo strip_tags( $post->post_content ); ?>"
+  "url" : "<?php echo get_bloginfo('url') . $_SERVER['REQUEST_URI']; ?>",
+  "publisher" : {
+    "@type" : "Organization",
+    "name" : "<?php echo get_bloginfo('name'); ?>"
 }
 </script>
-<!-- Google 構造化データ マークアップ支援ツールが生成した JSON-LD マークアップ -->
+<?php } ?>
+
 </head><body>
 
 <!-- ----------------------- #Wrapper ------------------------ -->
