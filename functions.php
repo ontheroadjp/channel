@@ -646,5 +646,46 @@ function add_help_text($contextual_help, $screen_id, $screen) {
 add_action( 'contextual_help', 'add_help_text', 10, 3 );
 */
 
-
+// JSON-LD
+add_action('wp_head','insert_json_ld');
+function insert_json_ld (){
+    if (is_single()) {
+        if (have_posts()) : while (have_posts()) : the_post();
+              $context = 'http://schema.org';
+              $type = 'Article';
+              $name = get_the_title();
+              $authorType = 'Person';
+              $authorName = get_the_author();
+              $dataPublished = get_the_date('Y-n-j');
+              $thumbnail_id = get_post_thumbnail_id($post->ID);
+              $image = wp_get_attachment_image_src( $thumbnail_id, 'full' );
+              $imageurl = $image[0];
+              $category_info = get_the_category();
+              $articleSection = $category_info[0]->name;
+              $articleBody = get_the_content();
+              $url = get_permalink();
+              $publisherType = 'Organization';
+              $publisherName = get_bloginfo('name');
+              $json= "
+              \"@context\" : \"{$context}\",
+              \"@type\" : \"{$type}\",
+              \"name\" : \"{$name}\",
+              \"author\" : {
+                   \"@type\" : \"{$authorType}\",
+                   \"name\" : \"{$authorName}\"
+                   },
+              \"datePublished\" : \"{$dataPublished}\",
+              \"image\" : \"{$imageurl}\",
+              \"articleSection\" : \"{$articleSection}\",
+              \"url\" : \"{$url}\",
+              \"publisher\" : {
+                   \"@type\" : \"{$publisherType}\",
+                   \"name\" : \"{$publisherName}\"
+                   }
+              ";
+            echo '<script type="application/ld+json">{'.$json.'}</script>';
+        endwhile; endif;
+        rewind_posts();
+    }
+}
 ?>
