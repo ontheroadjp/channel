@@ -61,6 +61,23 @@
 <meta property="og:description" content="<?php echo get_bloginfo('description'); ?>" />
 <?php } ?>
 
+<!-- Google 構造化データ マークアップ支援ツールが生成した JSON-LD マークアップ -->
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Article",
+  "name" : "<?php echo strip_tags( the_title() ); ?>",
+  "author" : {
+    "@type" : "Person",
+    "name" : "<?php echo get_the_author_meta('display_name'); ?>"
+  },
+  "datePublished" : "<?php the_date('Y-m-d'); ?>",
+  "image" : "<?php get_thumbnail_uri($post->ID); ?>",
+  "articleBody" : "<?php the_content(); ?>"
+  "url" : "<?php echo get_bloginfo('url') . $_SERVER['REQUEST_URI']; ?>"
+}
+</script>
+<!-- Google 構造化データ マークアップ支援ツールが生成した JSON-LD マークアップ -->
 </head><body>
 
 <!-- ----------------------- #Wrapper ------------------------ -->
