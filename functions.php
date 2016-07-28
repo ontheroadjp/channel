@@ -1,6 +1,12 @@
 <?php
 include("settings.php");
 
+// robots.txt
+add_action('do_robots', create_function('', 'echo "Disallow: /.well-known/\n";'));
+add_action('do_robots', create_function('', 'echo "Disallow: /aws/\n";'));
+add_action('do_robots', create_function('', 'echo "Disallow: /en/\n";'));
+add_action('do_robots', create_function('', 'echo "Disallow: /zu/\n";'));
+add_action('do_robots', create_function('', 'echo "Disallow: /ko/\n";'));
 
 
 // http => https  -----------------------------------------------------
