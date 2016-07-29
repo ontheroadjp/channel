@@ -13,6 +13,13 @@
 
 <!-- --------------------- CSS ------------------------ -->
 <link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory'); ?>/style.css" />
+<style>
+#toc_container {
+    margin: 0 0 50px 0 !important;
+    line-height: 2.7em;
+}
+</style>
+
 
 <!-- -------------------- wp_head() ---------------------- -->
 <?php wp_head(); ?>
